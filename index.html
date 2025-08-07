@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Librarian Muneera Zia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="/Images/logo.png" alt="Muneerah Zia">
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="#">About</a>
+      <a href="services.html">Services</a>
+      <a href="my_experience.html">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <a href="#"><span>About</span></a>
+    <a href="services.html"><span>Services</span></a>
+    <a href="my_experience.html"><span>Experience</span></a>
+    <a href="#contact"><span>Contact</span></a>
+  </div>
+
+  <div class="hero">
+    <p>Hi, I am</p>
+    <h1>Muneerah Zia</h1>
+    <p style="font-weight: 600;">Crafting Libraries That Feel Like Home For Every Reader </p>
+    <p class="Sys"> With 25 years of experience, I help you create organized, 
+        functional, and beautiful spaces that invite 
+        curiosity and lifelong reading habits.</p>
+    
+    <a href="quote.html">
+      <button id="contact-button-quote">Get a quote</button>
+    </a>
+  </div>
+
+  <!-- About me section starts here -->
+  <div class="about-container">
+    <h2 class="about-me-h2"><i class="ri-asterisk"></i> I LOVE BEING SURROUNDED BY BOOKS</h2>
+    <p class="about-me-p">And of course</p>
+    <p class="My-Work">MY WORK<sup><i class="ri-bard-line"></i></sup></p>
+
+    <!-- Octagonal Button Starts here -->
+    <div class="oc">
+      <div class="octagon-wrapper">
+        <a href="my_experience.html" class="octagon-link">
+          <div class="octagon"></div>
+          <span class="octagon-text">My Experience</span>
+        </a>
+      </div>
+    </div><!-- Octagonal Button Ends here -->
+  </div>
+
+<!-- SERVICES SECTION STARTS HERE  -->
+ <section class="services">
+    <h1>I CAN HELP YOU WITH</h1>
+    <div class="service-cards">
+      <div class="card">
+        <div class="number">01</div>
+        <h2>E-Book Sourcing</h2>
+        <p>
+          I research, identify, source, and manage e-books from trusted digital platforms, ensuring your digital library is rich, accessible, and aligned with user interests.
+        </p>
+      </div>
+      <div class="card">
+        <div class="number">02</div>
+        <h2>Development</h2>
+        <p>
+          I build scalable websites from scratch that fit seamlessly with design. 
+          My focus is on micro animations, transitions and interaction. 
+          Building with Webflow (or Kirby CMS).
+        </p>
+      </div>
+      <div class="card">
+        <div class="number">03</div>
+        <h2><span class="star">✦</span> The full package</h2>
+        <p>
+          A complete website from concept to implementation, that's what makes me stand out. 
+          My great sense for design and my development skills enable me to create kick-ass projects.
+        </p>
+      </div>
+      <div class="card">
+        <div class="number">04</div>
+        <h2><span class="star">✦</span> The full package</h2>
+        <p>
+          A complete website from concept to implementation, that's what makes me stand out. 
+          My great sense for design and my development skills enable me to create kick-ass projects.
+        </p>
+      </div>
+      <div class="card">
+        <div class="number">05</div>
+        <h2><span class="star">✦</span> The full package</h2>
+        <p>
+          A complete website from concept to implementation, that's what makes me stand out. 
+          My great sense for design and my development skills enable me to create kick-ass projects.
+        </p>
+      </div>
+      <div class="card">
+        <div class="number">06</div>
+        <h2><span class="star">✦</span> The full package</h2>
+        <p>
+          A complete website from concept to implementation, that's what makes me stand out. 
+          My great sense for design and my development skills enable me to create kick-ass projects.
+        </p>
+      </div>
+    </div>
+  </section>
+ <!-- SERVICES SECION ENDS HERE -->
+  
+
+  <!-- IMAGE SLIDER STARTS HERE -->
+   <h1  id="slider-h1">WORK I HAVE DONE</h1>
+  <section class="rotating-slider-stage">
+    <div class="rotating-slider-container">
+      <div class="rotating-slider-ring">
+        <!-- Images will be added dynamically via JS -->
+      </div>
+    </div>
+    <!-- Zoom Preview Modal -->
+    <div class="zoom-preview-overlay" id="zoomPreview">
+      <div class="zoom-preview-image" id="zoomImage"></div>
+      <button class="close-zoom-btn" id="closeZoom">×</button>
+    </div>
+  </section>
+  <!-- IMAGE SLIDER ENDS HERE -->
+
+  <!-- CONTACT PAGE STARTS HERE  -->
+  <div id="contact" class="contact-container-bg">
+    <div class="contact-container">
+      <h2 class="contact-h2"><i class="ri-book-shelf-line"></i>LET'S START A PROJECT TOGETHER</h2>
+      <!-- <button class="contact-button">muneerahzia@gmail.com</button>
+      <button class="contact-button">Whatsapp</button> -->
+      <div class="contact-buttons">
+        <a href="mailto:your@email.com" class="btn gmail-btn">
+          <i class="ri-mail-line"></i> muneerahzia@gmail.com
+        </a>
+        <a href="https://wa.me/your-number" target="_blank" class="btn whatsapp-btn">
+          <i class="ri-whatsapp-line"></i> 0313-86926026
+        </a>
+
+      </div>
+
+       <div class="quote-button-wrapper">
+         <a href="quote.html">
+           <button id="contact-button-quote-footer">Get a quote</button>
+         </a>
+       </div>
+
+      
+    </div>
+    <hr class="contact-hr">
+    <p class="contact-container-p">© Muneerah Zia All Rights Reserved</p>
+    <p class="contact-container-p2">Developed by: Tehmina Khan</p>
+  </div>
+  <!-- CONTACT PAGE ENDS HERE  -->
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
