@@ -9,6 +9,8 @@
       overflow: auto;
       scrollbar-width: none;         /* Firefox */
       -ms-overflow-style: none;      /* IE and Edge */
+      scroll-behavior: smooth;
+
     }
 
     html::-webkit-scrollbar, 
@@ -322,10 +324,6 @@
   100% { transform: rotate(360deg); }
 }
 
-/* Hover scale effect */
-.octagon-wrapper:hover {
-}
-
 /* Octagonal button ends here */
 
 /* CONTACT SECTION CSS STARTS HERE  */
@@ -532,7 +530,7 @@
       }
 
       .hero {
-        background-image: url('Images/Web_Background_upto_500px.png');
+        background-image: url('images/Web_Background_upto_500px.png');
       }
 
     }
@@ -626,7 +624,7 @@
     height: 330px;
   }
   .hero {
-        background-image: url('Images/Web_Background_upto_500px.png');
+        background-image: url('images/Web_Background_upto_500px.png');
       }
   .Sys{
     max-width: 90%;
@@ -811,4 +809,130 @@
   font-size: clamp(1.5rem, 3vw, 3rem);
   line-height: 1.1;
 }
+}
+
+/* Footer starts here  */
+.custom-footer {
+  background-color: #4b2b14; /* Brown background */
+  color: white;
+  padding: 40px 0px 0;
+  text-align: left;
+  position: relative;
+}
+
+.footer-left {
+  position: absolute; /* now sits on top of the image */
+  top: 0px; /* adjust for vertical placement */
+  left: 4vw; /* matches your original left margin */
+  z-index: 2;
+}
+
+.footer-left h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.quote-btn {
+  margin-top: 1vw;
+  display: inline-block;
+  padding: 6px 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.quote-btn:hover {
+  background: white;
+  color: #4b2b14;
+}
+
+.footer-books {
+  margin-top: 20px;
+  position: relative; /* ensures absolute elements are positioned relative to this */
+}
+
+.footer-books img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0px;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1vw;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+  margin: 0 4vw;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-center a {
+  margin: 0 15px;
+  
+}
+
+.footer-center p {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  
+}
+
+.footer-dev-info {
+  color: white;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 16px);
+  padding-bottom: 0.3vw;
+  
+}
+
+.footer-dev-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-dev-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-left {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .footer-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .quote-btn {
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }
