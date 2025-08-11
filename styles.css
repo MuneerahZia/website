@@ -920,7 +920,7 @@
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
+    text-align: left;
   }
 
   .footer-left h2 {
