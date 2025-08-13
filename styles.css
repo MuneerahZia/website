@@ -945,22 +945,23 @@
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* ✅ stops early wrapping */
 }
 
 .services-image {
-  flex: 1 1 50%;
+  flex: 0 0 50%; /* ✅ fixed 50% width */
 }
 
 .services-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  display: block;
 }
 
 .services-content {
-  flex: 1 1 50%;
+  flex: 0 0 50%; /* ✅ fixed 50% width */
   max-width: 600px;
 }
 
@@ -987,9 +988,11 @@
 @media (max-width: 900px) {
   .services-section {
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
   }
-  .services-content {
+  .services-image, .services-content {
+    flex: 0 0 100%;
     max-width: 100%;
   }
 }
