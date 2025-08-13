@@ -998,4 +998,8 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .services-section {
+  
+  padding: 15% 10% 0% 10%;
+}
 }
