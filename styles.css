@@ -162,12 +162,13 @@
       max-width: 60%;
       margin: 0 auto;
       padding: 0 20px;
+      font-weight: 500;
     }
     
 
     #contact-button-quote {
       margin-top: 10px;
-      background-color: #c06a1abb; /* Green background */
+      background-color: #4b2b14f0; /* Green background */
       color: white; /* Text color */
       padding: 5px 16px; /* Size */
       border: none;
@@ -514,6 +515,7 @@
   font-size: 0.9rem;
   line-height: 1.6;
   color: #333;
+  word-spacing: 1px;
 }
 
 
@@ -944,7 +946,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 7% 15% 0% 15%;
   flex-wrap: nowrap; /* ✅ stops early wrapping */
 }
 
@@ -975,14 +977,15 @@
 }
 
 .section-title {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .services-content p {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #333;
+  word-spacing: 1px;
 }
 
 @media (max-width: 900px) {
